@@ -156,16 +156,53 @@ python shot-sketch-board/scripts/export_feishu_handoff.py path/to/storyboard.xls
 
 ## 安装方式
 
+### 方式一：复制到本地 Codex skills 目录
+
 把 `shot-sketch-board/` 文件夹复制到你的 Codex skills 目录，例如：
 
 ```text
 C:\Users\<你的用户名>\.codex\skills\shot-sketch-board
 ```
 
-或使用你自己的 skill installer 从 GitHub 子目录安装：
+复制后重启 Codex，或者新开一个线程。之后直接说 `使用 shot-sketch-board`，Codex 就可以按这个 skill 的规则工作。
+
+### 方式二：从 GitHub 安装
+
+如果你的 Codex 环境有 skill installer，可以直接让 Codex 执行：
 
 ```text
-jkaxuwg-design/shot-sketch-board/shot-sketch-board
+请从 GitHub 安装这个 skill：
+https://github.com/jkaxuwg-design/shot-sketch-board/tree/main/shot-sketch-board
+```
+
+也可以用仓库路径表达：
+
+```text
+安装 jkaxuwg-design/shot-sketch-board 仓库里的 shot-sketch-board skill。
+```
+
+### 方式三：不安装，直接让 Agent 参考
+
+如果对方暂时不能安装 skill，也可以把下面这段复制给 Codex 或其他 Agent：
+
+```text
+请参考并使用这个 skill：
+https://github.com/jkaxuwg-design/shot-sketch-board/tree/main/shot-sketch-board
+
+你的任务是把我提供的中文视频文案、brief 或 Excel 脚本，整理成横屏视频分镜生产表。
+
+输出字段必须包含：
+镜头/段落/时长、景别/运镜、画面描述、台词/旁白、画面类型、情绪类型、动效/后期花字、备注、首帧图提示词（中文）、首帧图提示词（英文）、图生视频提示词（中文）、图生视频提示词（英文）、草图/画面。
+
+规则要求：
+1. 一句话或一个信息节奏拆成一个镜头。
+2. 画面描述必须写清楚主体位置、素材来源、录屏/截图范围、动效、转场和前后衔接。
+3. 画面类型只能从：数字/真人口播、AI生成素材、动效制作素材、录屏素材 中选择。
+4. 情绪类型只能从：兴奋、平静、轻松、开心、紧张 中选择。
+5. 需要 AI 生成素材时，补充中英双语首帧图提示词和图生视频提示词。
+6. 草图必须是 16:9 横屏、低保真、干净、无可读 UI/代码/乱码。
+7. 录屏素材不生成草图，直接使用真实电脑录屏或截图。
+8. 如果需要飞书协作，请按 feishu-handoff 规则生成图包、草图文件列、飞书复制说明和 HTML 粘贴版。
 ```
 
 ## 使用示例
