@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Generated handoff files
+outputs/
+*_飞书迁移版.xlsx
+*_草图图包_飞书迁移版/
+*_草图图包_飞书迁移版.zip
+*_草图索引_飞书复制.tsv
+*_飞书粘贴版_图片在单元格.html
+*_飞书草图列粘贴版.html
+
+# Local spreadsheets and media
+*.xlsx
+*.xls
+*.mp4
+*.mov
+*.png
+*.jpg
+*.jpeg
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
