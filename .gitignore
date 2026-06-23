@@ -13,6 +13,12 @@ outputs/
 *_飞书粘贴版_图片在单元格.html
 *_飞书草图列粘贴版.html
 
+# Local publishing helpers
+/*.ps1
+publish_to_github.ps1
+publish_via_github_api.ps1
+update_readme_via_api.ps1
+
 # Local spreadsheets and media
 *.xlsx
 *.xls
