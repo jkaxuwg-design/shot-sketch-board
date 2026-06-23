@@ -1,0 +1,7 @@
+interface:
+  display_name: "横屏分镜草图"
+  short_description: "把文案/脚本转成横屏视频分镜表、AI提示词和低保真草图。"
+  default_prompt: "Use $shot-sketch-board to turn this video copy or script into a horizontal storyboard table with shot design, prompts, and sketch boards."
+
+policy:
+  allow_implicit_invocation: true
