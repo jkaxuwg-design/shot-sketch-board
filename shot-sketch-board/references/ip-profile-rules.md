@@ -23,7 +23,7 @@ This skill supports multiple video IPs. Never let one IP's finished-frame exampl
    - transition rhythm
    - recurring layout patterns
 
-## Current Temporary IP Profiles
+## Optional Example IP Profile
 
 ### IP-A: Dark Grid Knowledge Explainer
 
